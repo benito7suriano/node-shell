@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const cat = () => {
-  fs.readFile('PATH', 'utf8', (err, data) => {
+const cat = (arg) => {
+  fs.readFile('./' + arg, 'utf8', (err, data) => {
     if (err) {
       throw err;
     } else {
