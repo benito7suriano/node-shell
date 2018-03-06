@@ -1,5 +1,7 @@
 'use strict';
 const pwd = require('./pwd.js');
+const ls = require('./ls.js');
+const cat = require('./cat.js');
 /*
 //Output a prompt
 process.stdout.write('prompt> ');
@@ -22,9 +24,14 @@ process.stdin.on('data',(data)=> {
   // if cmd === pwd then..
   if (cmd === 'pwd') {
     pwd();
+  } else if (cmd === 'ls') {
+    ls();
+  } else if (cmd === 'cat') {
+    cat();
   }
   // process.stdout.write('You typed: ' + cmd);
   // process.stdout.write('\n prompt> ');
 
 });
 
+module.exports = cmd;
