@@ -1,7 +1,9 @@
-// console.log(Object.keys(process));
-const cwd = () => {
- process.stdout.write(process.cwd());
- process.stdout.write('\n prompt> ');
+const done = require('./bash.js');
+
+const cwd = (done) => {
+ //  process.stdout.write(process.cwd());
+ //  process.stdout.write('\nprompt> ');
+ done(process.cwd());
 }
 
 
